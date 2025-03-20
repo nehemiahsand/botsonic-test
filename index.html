@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BotSonic Test</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="chatbot">
+            <script>
+                (function (w, d, s, o, f, js, fjs) {
+                  w["botsonic_widget"] = o;
+                  w[o] =
+                    w[o] ||
+                    function () {
+                      (w[o].q = w[o].q || []).push(arguments);
+                    };
+                  (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+                  js.id = o;
+                  js.src = f;
+                  js.async = 1;
+                  fjs.parentNode.insertBefore(js, fjs);
+                })(window, document, "script", "Botsonic", "https://widget.botsonic.com/CDN/botsonic.min.js");
+                Botsonic("init", {
+                  serviceBaseUrl: "https://api-azure.botsonic.ai",
+                  token: "ab8b6fa7-fb31-49ef-a39a-bf5f94a23242",
+                });
+            </script>
+        </div>
+    </body>
+</html>
