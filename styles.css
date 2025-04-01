@@ -1,9 +1,18 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
 }
 
 #Botsonic-wrapper {
-    width: 400px;
+    position: relative !important;
+    flex-grow: 1; /* Makes it grow inside flexbox */
+    width: 80vw !important;
+    height: 80vh !important;
+    max-width: 80vw !important;
+    max-height: 80vh !important;
+    border-radius: 0 !important;
 }
