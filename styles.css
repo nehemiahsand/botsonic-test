@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Botsonic-wrapper {
+    width: 400px;
+}
