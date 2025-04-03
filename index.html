@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ask John Lauriello</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-      <h1>Chat with John Lauriello</h1>
-      <div class="chatbot">
-        <script>
-          (function (w, d, s, o, f, js, fjs) {
-            w["botsonic_widget"] = o;
-            w[o] =
-              w[o] ||
-              function () {
-                (w[o].q = w[o].q || []).push(arguments);
-              };
-            (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
-            js.id = o;
-            js.src = f;
-            js.async = 1;
-            fjs.parentNode.insertBefore(js, fjs);
-          })(window, document, "script", "Botsonic", "https://widget.botsonic.com/CDN/botsonic.min.js");
-          Botsonic("init", {
-            serviceBaseUrl: "https://api-azure.botsonic.ai",
-            token: "d8675465-38cd-4213-b663-d32672b08230",
-          });
-        </script>
-      </div>
-      <div>
-        <button>hello</button>
-      </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with John Lauriello</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <header>
+            <img src="john-lauriello0014.jpg" alt="John Lauriello" class="profile-pic">
+            <h1>Chat with John Lauriello</h1>
+            <p>Your AI-powered real estate expert.</p>
+        </header>
+
+        <iframe frameBorder="0" 
+            src="https://widget.botsonic.com/CDN/index.html?service-base-url=https%3A%2F%2Fapi-azure.botsonic.ai&token=b7f3fafd-bd25-4117-9d8b-fab4589051cd&base-origin=https%3A%2F%2Fbot.writesonic.com&instance-name=Botsonic&standalone=true&page-url=https%3A%2F%2Fbot.writesonic.com%2Fbots%2F356410ff-c382-429b-9f7f-41b5696d9131%2Fconnect">
+        </iframe>
+    </div>
+
+    <div class="cta-section">
+        <p>If you have a Character.ai account, you can even <a href="https://www.character.ai/" target="_blank" class="cta-link">CALL John!</a></p>
+    </div>
+
+</body>
 </html>

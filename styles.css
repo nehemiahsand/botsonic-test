@@ -1,18 +1,40 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative; /* Ensures Botsonic stays inside */
+    overflow: hidden; /* Prevents Botsonic from breaking out */
 }
 
-#Botsonic-wrapper {
-    position: relative !important;
-    flex-grow: 1; /* Makes it grow inside flexbox */
+
+/* Style for our custom Botsonic container */
+.custom-botsonic {
+    top: 10vh !important;
+    left: 10vw !important;
     width: 80vw !important;
     height: 80vh !important;
-    max-width: 80vw !important;
-    max-height: 80vh !important;
     border-radius: 0 !important;
+    margin: 0 !important;
+}
+
+/* Ensure inner elements scale correctly */
+.custom-botsonic * {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.bot-container {
+    position: relative !important;
+}
+
+@media (min-width: 451px) {
+    .chat-panel-content {
+        width: none !important;
+    } 
 }
